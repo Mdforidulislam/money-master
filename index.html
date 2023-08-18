@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <main class="max-w-screen-xl mx-auto px-5 py-16">
+        <section >
+            <div class="container block lg:flex">
+                <div class="container-left w-1/2">
+                    <img class="w-[600px] border-4 border-blue-500" src="./img/Pexels Photo by Karolina Grabowska.png" alt="">
+                </div>
+                <div class="container-right flex-1 shadow-xl p-10 rounded-lg">
+                    <div class="space-y-6 text-center">
+                        <h2 class="text-center text-3xl font-bold"><span class="stroke-yellow-700 text-blue-300">My</span> Daily Income</h2>
+                        <hr>
+                        <span class="mr-3 text-xl">Income</span><input id="income-value" type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs" />
+                        <h2 class="text-center text-3xl font-bold">Expenses</h2>
+                        <span class="mr-3 text-xl">Food:</span><input id="Food-value" type="text" placeholder="Type Amount" class="input input-bordered input-info w-full max-w-xs" /><br>
+                        <span class="mr-3 text-xl">Rent:</span><input id="Rent-value" type="text" placeholder="Type Amount" class="input input-bordered input-info w-full max-w-xs" /><br>
+                        <span class="mr-3 text-xl">Clothes:</span><input id="Clothes-value" type="text" placeholder="Type Amount" class="input input-bordered input-info w-full max-w-xs" /><br>
+                        <button id="Calculator-btn" class="btn btn-primary w-[67%]">Calculator</button><br>
+                        <h2 class="text-center text-2xl font-bold">Total Expenses : <span id="total-expenses">00</span></h2>
+                        <h2 class="text-center text-2xl font-bold">Total Balence  : <span id="total-balence">00</span></h2>
+                        <div>
+                            <span class="mr-3 text-xl">Save:</span><input id="saving-value" type="text" placeholder="Type Amount" class="input input-bordered input-info w-full max-w-xs" /> <span class="mr-3 text-xl">%</span>  <button id="saving-btn" class="btn btn-primary w-40">Calculator</button>
+                        </div>
+                        <h2 class="text-center text-2xl font-bold">Saving Amount : <span id="saving-amount">00</span></h2>
+                        <h2 class="text-center text-2xl font-bold">Remaining Balance  : <span id="remaing-balance">00</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./function.js"></script>
+    <script src="./apps.js"></script>
+</body>
+</html>

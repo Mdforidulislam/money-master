@@ -1,0 +1,1 @@
+CalculationBalence('Calculator-btn','income-value','Food-value','Rent-value','Clothes-value','total-expenses','total-balence','saving-btn','saving-value','saving-amount','remaing-balance')
